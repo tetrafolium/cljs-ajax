@@ -20,6 +20,7 @@
   :hooks [leiningen.cljsbuild]
   :global-vars { *warn-on-reflection* true }
   :clean-targets ^{:protect false} ["target" "target-int" "target-test"]
+  :codox {:source-paths ["src"]}
   :profiles
   {:dev {:source-paths ["dev", "browser-test"]
          :test-paths ["test"]
